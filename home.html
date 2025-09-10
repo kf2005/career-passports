@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>NextStep Navigator</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
   <header class="py-3">
@@ -23,181 +23,116 @@
     </div>
   </header>
 
-
-
   <!-- Second Navbar (hidden on login, shows after Explore) -->
   <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-custom d-none">
-
     <div class="container d-flex justify-content-between align-items-left">
       <span id="greeting" class="navbar-text small text-dark" style="font-size: 15px;"></span>
-      </div>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" data-tab="career" href="#">Career</a></li>
-          <li class="nav-item"><a class="nav-link" data-tab="quiz" href="#">Quiz</a></li>
-          <li class="nav-item"><a class="nav-link" data-tab="multimedia" href="#">Multimedia</a></li>
-          <li class="nav-item"><a class="nav-link" data-tab="stories" href="#">Stories</a></li>
-          <li class="nav-item"><a class="nav-link" data-tab="resources" href="#">Resources</a></li>
-          <li class="nav-item"><a class="nav-link" data-tab="bookmark" href="#">Bookmarks</a></li>
-          <li class="nav-item"><a class="nav-link" data-tab="about" href="#">About</a></li>
-          <li class="nav-item"><a class="nav-link" data-tab="contact" href="#">Contact</a></li>
-        </ul>
-      </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" data-tab="career" href="#">Career</a></li>
+        <li class="nav-item"><a class="nav-link" data-tab="quiz" href="#">Quiz</a></li>
+        <li class="nav-item"><a class="nav-link" data-tab="multimedia" href="#">Multimedia</a></li>
+        <li class="nav-item"><a class="nav-link" data-tab="stories" href="#">Stories</a></li>
+        <li class="nav-item"><a class="nav-link" data-tab="resources" href="#">Resources</a></li>
+        <li class="nav-item"><a class="nav-link" data-tab="bookmark" href="#">Bookmarks</a></li>
+        <li class="nav-item"><a class="nav-link" data-tab="about" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" data-tab="contact" href="#">Contact</a></li>
+      </ul>
     </div>
   </nav>
 
+  <!-- Log in STARTS-->
+  <section id="landingSection" class="d-flex justify-content-center align-items-center" style="min-height:80vh;">
+    <div class="login-card card card-body">
+      <h2 class="text-center mb-2 brand">NextStep Navigator</h2>
+      <p class="text-center small-muted mb-4">Your personalized guide to explore careers, take quizzes, and find resources</p>
 
+      <!-- Name -->
+      <div class="mb-3">
+        <input id="username" type="text" class="form-control" placeholder="Your Name">
+      </div>
 
+      <!-- Email -->
+      <div class="mb-3">
+        <input id="userEmail" type="email" class="form-control" placeholder="Your Email">
+      </div>
 
-<!-- Log in STARTS-->
+      <!-- Grade -->
+      <div class="mb-3">
+        <select id="userType" class="form-select">
+          <option value="student">Student (Grades 8–12)</option>
+          <option value="undergraduate">Undergraduate</option>
+          <option value="graduate">Graduate</option>
+          <option value="professional">Working Professional</option>
+        </select>
+      </div>
 
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" id="rememberMe">
+        <label class="form-check-label" for="rememberMe">Remember Me</label>
+      </div>
 
-<section id="landingSection" class="d-flex justify-content-center align-items-center" style="min-height:80vh;">
-  <div class="login-card card card-body">
-    <h2 class="text-center mb-2 brand">NextStep Navigator</h2>
-    <p class="text-center small-muted mb-4">Your personalized guide to explore careers, take quizzes, and find resources</p>
-
-    <!-- Name -->
-    <div class="mb-3">
-      <input id="username" type="text" class="form-control" placeholder="Your Name">
+      <!-- Explore Button -->
+      <button id="exploreBtn" class="btn btn-accent w-100">Explore</button>
     </div>
+  </section>
+  <!-- LOGIN ENDS --->
 
-    <!-- Email -->
-    <div class="mb-3">
-      <input id="userEmail" type="email" class="form-control" placeholder="Your Email">
-    </div>
-
-    <!-- Grade -->
-    <div class="mb-3">
-      <select id="userType" class="form-select">
-        <option value="student">Student (Grades 8–12)</option>
-        <option value="undergraduate">Undergraduate</option>
-        <option value="graduate">Graduate</option>
-        <option value="professional">Working Professional</option>
-      </select>
-    </div>
-
-    <div class="form-check mb-3">
-  <input class="form-check-input" type="checkbox" id="rememberMe">
-  <label class="form-check-label" for="rememberMe">Remember Me</label>
-</div>
-
-
-    <!-- Explore Button -->
-    <button id="exploreBtn" class="btn btn-accent w-100">Explore</button>
-  </div>
-</section>
-
-<!-- LOGIN ENDS --->
-
-
-
-
-
-
-
-
-<!-- Homepage Section (hidden until Explore) -->
+  <!-- Homepage Section (hidden until Explore) -->
   <section id="homeSection" class="d-none">
     <main class="container my-4">
       <h3 id="greeting" class="mb-4"></h3>
 
-
-
-
-
       <!-- CAREER BANK -->
       <section id="career" class="tab-pane d-none">
-      <h2>CAREER BANK</h2>
+        <h2>CAREER BANK</h2>
       </section>
-      
-
-
-
-
-
 
       <!--- Quiz --->
       <section id="quiz" class="tab-pane d-none">
         quiz.....
       </section>
 
-
-
-
       <!-- Multimedia --->
-       <section id="multimedia" class="tab-pane d-none">
+      <section id="multimedia" class="tab-pane d-none">
         multimedia....
-       </section>
-      
+      </section>
 
-
-
-      
       <!--- Stories --->
       <section id="stories" class="tab-pane d-none">
         Stories content...
       </section>
-      
-      
 
-
-
-      
       <!--- Resourses --->
       <section id="resources" class="tab-pane d-none">
         Resources content...
       </section>
-      
 
-
-
-
-    
       <!--- Bookmarks --->
       <section id="bookmark" class="tab-pane d-none">
         bookmarks...
       </section>
-       
-    
 
-
-
-       <!--- About --->
+      <!--- About --->
       <section id="about" class="tab-pane d-none">
         about content...
       </section>
 
-
-
-
-      
       <!--- Contact --->
       <section id="contact" class="tab-pane d-none">
         Contact form...
       </section>
-    
-    
-    
-    
-    
-    
-    
     </main>
   </section>
 
+  <footer class="py-3 mt-4 border-top small-muted text-center" style="background-color: #839e9a; color: black;">
+    © NextStep Navigator • Demo implementation
+  </footer>
 
-
-<footer class="py-3 mt-4 border-top small-muted text-center" style="background-color: #839e9a; color: black;">
-© NextStep Navigator • Demo implementation
-</footer>
-
-  
-
-  <script src="js/script.js"></script> 
+  <script src="index.js"></script>
 </body>
 </html>
