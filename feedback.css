@@ -117,7 +117,7 @@
 }
 
 .feedback-card button:hover {
-  background-color: #0071e3;
+ background: linear-gradient(180deg, var(--muted), #afc2bf 60%);
   opacity: 0.9;
 }
 
