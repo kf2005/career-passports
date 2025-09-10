@@ -1,0 +1,87 @@
+body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background: #f8fafc;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: linear-gradient(90deg, #037d55, #2dae88);
+      color: white;
+    }
+    header h1 { font-size: 2.2rem; margin-bottom: 0.5rem; }
+    .section { padding: 2rem 1.5rem; max-width: 1200px; margin: auto; }
+    h2 { color: #0e1914; text-align: center; margin-bottom: 1rem;font-family: 'Times New Roman', Times, serif;font-size: xx-large; }
+    p.section-intro { text-align: center; max-width: 700px; margin: auto auto 2rem; color: #555; }
+
+    /* Multimedia */
+    .video-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;
+    }
+    .video-card {
+      background: white; border-radius: 12px; box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+      overflow: hidden; transition: transform 0.2s;
+    }
+    .video-card:hover { transform: translateY(-5px); }
+    .video-card iframe { width: 100%; height: 200px; display: block; }
+    .video-card h4 { padding: 0.8rem; font-size: 1rem; }
+
+    /* Success Stories */
+    .filters { text-align: center; margin-bottom: 1rem; background-color: #a1aeae;}
+    .filters button {
+      margin: 5px; padding: 8px 16px; border: none; border-radius: 20px;
+      background: #14958e; color: white; cursor: pointer; transition: 0.3s;
+    }
+    .filters button:hover { background: #3da8a2; }
+    .story-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;
+    }
+    .story-card {
+      background: rgb(142, 244, 176); padding: 1rem; border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1); text-align: center;
+      transition: transform 0.2s;
+    }
+    .story-card:hover { transform: translateY(-5px); }
+    .story-card img {
+      width: 100%; height: 160px; object-fit: cover; border-radius: 8px;
+    }
+    .bookmark-btn {
+      margin-top: 10px; padding: 6px 12px; border: none; background: #4a90e2;
+      color: white; border-radius: 5px; cursor: pointer; transition: 0.3s;
+    }
+    .bookmark-btn:hover { background: #3578c5; }
+
+    /* Resource Library */
+    .search-bar { text-align: center; margin-bottom: 1rem; }
+    .search-bar input {
+      padding: 8px; width: 80%; max-width: 400px; border: 1px solid #ccc; border-radius: 8px;
+    }
+    .resource-category {
+      margin-bottom: 1rem; border-radius: 8px; overflow: hidden;
+      background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .resource-category h3 {
+      cursor: pointer; background: #1a9572; color: white;
+      padding: 0.7rem 1rem; margin: 0;
+    }
+    .resource-links { display: none; padding: 0.5rem 1rem 1rem; }
+    .resource-links a {
+      display: block; margin: 5px 0; text-decoration: none; color: #333;
+    }
+
+    /* Bookmarks */
+    #bookmarks {
+      background: #fff; padding: 1.5rem; margin-top: 2rem;
+      border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    #bookmarkList { list-style: none; padding: 0; }
+    #bookmarkList li {
+      margin: 5px 0; padding: 5px; background: #f0f4f8; border-radius: 6px;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    #bookmarkList button {
+      background: crimson; color: white; border: none;
+      border-radius: 5px; padding: 3px 8px; cursor: pointer;
+    }
