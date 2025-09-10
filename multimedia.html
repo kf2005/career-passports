@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NextStep Navigator - Career Guidance</title>
+  <link rel="stylesheet" href="./index.css">
+ 
+</head>
+<body>
+  <header>
+    <h1>NextStep Navigator</h1>
+    <p>Guiding your career journey through Stories, Resources, and Multimedia</p>
+  </header>
+
+  <!-- Multimedia -->
+  <section class="section">
+    <h2>🎥 Multimedia</h2>
+    <p class="section-intro">Explore curated videos and podcasts to inspire your career journey.</p>
+    <div class="video-grid" id="videoGrid"></div>
+  </section>
+
+  <!-- Success Stories -->
+  <section class="section">
+    <h2>🌟 Success Stories</h2>
+    <p class="section-intro">Real people, real journeys. Filter by category to discover inspiring paths.</p>
+    <div class="filters">
+      <button onclick="filterStories('all')">All</button>
+      <button onclick="filterStories('student')">Students</button>
+      <button onclick="filterStories('graduate')">Graduates</button>
+      <button onclick="filterStories('professional')">Professionals</button>
+    </div>
+    <div class="story-grid" id="storyGrid"></div>
+  </section>
+
+  <!-- Resource Library -->
+  <section class="section">
+    <h2>📚 Resource Library</h2>
+    <p class="section-intro">Dive into categorized resources—articles, eBooks, and checklists—for structured learning.</p>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="🔎 Search resources...">
+    </div>
+    <div id="resourceLibrary"></div>
+  </section>
+
+  <!-- Bookmarks -->
+  <section class="section" id="bookmarks">
+    <h2>🔖 My Bookmarks (<span id="bookmarkCount">0</span>)</h2>
+    <ul id="bookmarkList"></ul>
+    <button onclick="exportBookmarks()">Export Bookmarks</button>
+  </section>
+
+  
+  
+  <script src="./index.js"></script>
+</body>
+</html>
+
+  
