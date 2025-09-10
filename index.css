@@ -1,0 +1,189 @@
+    /* Aesthetic + vintage-ish touches (soft colors, paper texture feel) */
+    :root{
+      --accent:#000000; /* warm bronze */
+      --muted:#f3efe6;
+      --card-bg:#fffdf8;
+    }
+
+
+    body{
+      background: linear-gradient(180deg,var(--muted),#afc2bf 60%);
+      font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+      color:#333;
+    }
+
+
+    header{
+      background: linear-gradient(90deg, rgba(138,109,59,0.08), rgba(138,109,59,0.02));
+      border-bottom: 1px solid rgba(138,109,59,0.08);
+      backdrop-filter: blur(2px);
+    }
+
+
+    .brand{
+      font-weight:700;
+      font-size: 20px;
+      letter-spacing:0.6px
+    }
+
+
+    .hero{
+       padding:2rem 0
+    }
+
+
+    .card-custom{
+       background:var(--card-bg); border:1px solid rgba(0,0,0,0.04); box-shadow:0 6px 18px rgba(30,30,30,0.04)
+    }
+
+
+    .small-muted{
+       font-size:0.9rem; color:#666
+    }
+
+
+    .chip{
+       display:inline-block;padding:6px 10px;border-radius:999px;background:#fff;border:1px solid rgba(0,0,0,0.06);margin-right:6px
+    }
+
+
+    .fade-in{
+       animation:fadeIn .6s ease both
+    }
+
+
+    @keyframes fadeIn{
+       from{opacity:0; transform:translateY(8px)} to{opacity:1; transform:none}
+    }
+
+
+    nav.breadcrumbs{
+       background:transparent;
+       margin-right: 40px;
+    }
+
+
+    .btn-accent{
+       background:var(--accent); color:#fff
+    }
+
+
+    .btn-accent-outline{
+       border:1px solid var(--accent); color:var(--accent); background:transparent
+    }
+
+
+    
+
+
+                                               /* LOGIN STARTS*/
+
+
+/* Login Card Style */
+.login-card {
+  background-color: rgb(173, 206, 195);
+  max-width: 400px;
+  color: black;
+  margin: auto;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  padding: 2rem;
+
+}
+
+.login-card h2 {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.login-card input,
+.login-card select {
+  height: 45px;
+  border-radius: 8px;
+}
+
+.login-card .btn-accent {
+  font-weight: 600;
+  padding: 0.7rem;
+  border-radius: 8px;
+}
+
+.btn-accent-outline{
+   color: cadetblue;
+}
+
+/* Small custom Remember Me checkbox */
+#rememberMe {
+  appearance: none;          /* remove browser default */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 14px;               /* small size */
+  height: 14px;
+  border: 2px solid #afc2bf;
+  border-radius: 3px;
+  background-color: #fff;
+  cursor: pointer;
+  position: relative;
+  margin-top: 7px;           /* align with label text */
+  transition: all 0.2s ease-in-out;
+}
+
+/* Checked state */
+#rememberMe:checked {
+  background-color: #0056f7;
+  border-color: #0026ff;
+}
+
+/* Tick ✔ */
+#rememberMe:checked::after {
+  content: "✔";
+  font-size: 10px;           /* small tick */
+  color: white;
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  line-height: 10px;
+}
+
+/* Label styling */
+.form-check-label {
+  margin-left: 6px;
+  font-size: 0.9rem;
+  color: #2f3e3c;
+  cursor: pointer;
+}
+
+
+
+                                                /* LOGIN ENDS */
+
+
+/* Navbar */
+/* Custom Navbar */
+.navbar-custom {
+  background-color: #afc2bf;
+  padding: 0.8rem 1rem;
+}
+
+.navbar-custom .navbar-brand {
+  color: #2f3e3c;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.navbar-custom .nav-link {
+  color: #2f3e3c;
+  margin-left: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
+  color: #ffffff;
+}
+
+
+
+
+    
