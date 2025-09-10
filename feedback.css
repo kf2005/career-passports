@@ -1,0 +1,123 @@
+/* ================= Feedback Section ================= */
+#feedback {
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--muted);
+  min-height: 400px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.feedback-card {
+  background: linear-gradient(180deg, var(--muted), #afc2bf 60%);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 6px 18px rgba(30, 30, 30, 0.04);
+  border-radius: 16px;
+  max-width: 600px;
+  width: 100%;
+  padding: 50px 40px;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.feedback-card:hover {
+  box-shadow: 0 10px 30px rgba(30, 30, 30, 0.1);
+}
+
+.feedback-card h2 {
+  margin-bottom: 20px;
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
+.feedback-card p {
+  margin-bottom: 40px;
+  color: var(--text-dark);
+  opacity: 0.8;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Input group styling */
+.input-group {
+  margin-bottom: 25px;
+  position: relative;
+  text-align: left;
+}
+
+/* Inputs, textarea, select with consistent styling */
+.input-group input,
+.input-group textarea,
+.input-group select {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1.5px solid rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 400;
+  background: #fff;
+  color: var(--text-dark);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  resize: vertical; /* only textarea */
+  box-sizing: border-box;
+}
+
+/* On focus */
+.input-group input:focus,
+.input-group textarea:focus,
+.input-group select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Placeholder styling */
+.input-group input::placeholder,
+.input-group textarea::placeholder,
+.input-group select::placeholder {
+  color: var(--text-muted);
+  opacity: 1; /* fully visible */
+  font-style: italic;
+}
+
+/* Remove default select arrow for a cleaner look */
+.input-group select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--text-muted) 50%),
+    linear-gradient(135deg, var(--text-muted) 50%, transparent 50%);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px);
+  background-size: 5px 5px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+/* Button styling */
+.feedback-card button {
+  background: var(--accent);
+  color: var(--card-bg);
+  border: none;
+  padding: 14px 36px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+  display: block;
+}
+
+.feedback-card button:hover {
+  background-color: #0071e3;
+  opacity: 0.9;
+}
+
