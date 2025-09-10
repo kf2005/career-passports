@@ -117,7 +117,8 @@
 }
 
 .feedback-card button:hover {
- background:  #7d9f9a;
+  background:var(--muted);
   opacity: 0.9;
+  color: #000000;
 }
 
