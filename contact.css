@@ -1,0 +1,222 @@
+
+/* contact section */
+
+#contact {
+  padding: 80px 20px;
+  background:var(--card-bg);
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  border-radius: 20px;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/*  ----- Left Panel: Contact Info -----*/
+.contact-info {
+  flex: 1 1 500px;
+}
+
+.contact-info h2 {
+  font-size: 2.4rem;
+  color: #1e3a5f;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* ------- Team Member Cards -------*/
+.team-member {
+  background: linear-gradient(180deg,var(--muted),#afc2bf 60%);
+  border-radius: 12px;
+  padding: 20px 24px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, 
+box-shadow 0.3s ease;
+  border-left: 5px solid #4aa3df;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.team-member h3 {
+  margin: 0;
+  color: #1e3a5f;
+  font-size: 20px;
+}
+.status {
+  font-weight: bold;
+  margin-left: 8px;
+  font-size: 0.9em;
+}
+
+.status.online {
+  color: #008000;
+}
+
+.status.offline {
+  color: gray;
+}
+.team-member p {
+  margin: 4px 0;
+  color: #666;
+  font-size: 15px;
+}
+
+/* ------ Office Hours Table------- */
+.office-hours {
+  margin-top: 40px;
+  flex: 1 1 100%;
+}
+
+.office-hours h3 {
+  margin-bottom: 16px;
+  font-size: 20px;
+  color: #1e3a5f;
+}
+
+.hours-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.hours-table th,
+.hours-table td {
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 15px;
+  color: #444;
+}
+
+.hours-table th {
+  background: linear-gradient(180deg,var(--muted),#afc2bf 60%);
+  color: #fff;
+}
+
+.hours-table tr:nth-child(even) {
+  background: #f0f5f9;
+}
+
+/* ----- Right Panel: Google Map ------*/
+.map-container {
+  flex: 1 1 600px;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+  animation: fadeIn 1s ease forwards;
+  max-height: 100%;
+}
+
+.extra-contact-info {
+  flex: 1 1 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 40px;
+    background: linear-gradient(180deg,var(--muted),#afc2bf 60%);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+  max-height: 800px;
+}
+
+.extra-contact-info > div {
+  flex: 1 1 250px;
+}
+
+/* Social Media Links */
+.social-links h3,
+.office-address h3,
+.whatsapp-chat h3 {
+  font-size: 18px;
+  color: #1e3a5f;
+  margin-bottom: 16px;
+}
+
+.social-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-links li {
+  margin-bottom: 12px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.social-links img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+/* Office Address */
+.office-address p {
+  color: #555;
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+  display: inline-block;
+  background-color: #25D366;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebe57;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .extra-contact-info {
+    flex-direction: column;
+  }
+
+  .extra-contact-info > div {
+    flex: 1 1 100%;
+  }
+}
+
+
+/* --------Animation -------- */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
