@@ -496,6 +496,37 @@ function setupSlider() {
 }
 
 
+// Scroll-to-contact 
+document.addEventListener('click', function (e) {
+ 
+  const btn = e.target.closest('#scroll-to-contact, [data-scroll-to="contact"]');
+  if (!btn) return;
+
+  e.preventDefault();
+
+  if (typeof showTab === 'function') {
+    showTab('contact');
+  } else {
+    
+    const contact = document.getElementById('contact');
+    if (contact) contact.classList.remove('d-none');
+  }
+
+  
+  const contact = document.getElementById('contact');
+  if (!contact) return;
+
+  
+  setTimeout(() => {
+    try {
+      contact.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } catch (err) {
+      
+      contact.scrollIntoView();
+    }
+  }, 60);
+});
+
   // Start app
   window.addEventListener('DOMContentLoaded', init);
 })();
